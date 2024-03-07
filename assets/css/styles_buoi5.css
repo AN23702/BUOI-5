@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+/* Header-Top */
+.header-top{
+    width: 100%;
+    height: 40px;
+    background-color: #CD6420;
+}
+
+
+/* Thanh phan Global */
+.container{
+    max-width: 1320px;
+    margin: auto;
+    height: 40px;
+    /* background-color: green; */
+}
+
+.header-top-text{
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;/*Can giua theo chieu ngang*/
+    align-items: center;/*Can giua theo chieu doc*/
+}
+
+    .header-top-text p{
+        color: white;
+        font-size: 16px;
+    }
+
+    /* Header-Center */
+    .header-main{
+        width: 100%;
+        height: 65px;
+
+        background-color: pink;
+    }
+
+    .header-main .container{
+        height: 65px;
+        /* background-color: red; */
+    }
+
+
+        .wrap-header-main{
+        display: flex;
+        height: 65px;
+        justify-content: space-between;
+        }
+
+        .header-main-left{
+            /* width: 20%; */
+            height: 65px;
+            /* background-color: black; */
+            display: flex;
+            align-items: center;
+        }
+
+            .header-main-left img{
+            width: 145px;
+            height: auto;
+            object-fit: cover;
+            }
+
+        .header-main-center{
+            /* width: 60%; */
+            height: 65px;
+            /* background-color:yellow; */
+        }
+
+            .menu-main{
+                display: flex;
+                width: 100%;
+                height: 65px;
+                align-items: center;
+            }
+
+            .menu-main li{
+                margin-right: 20px;
+                list-style: none;/*bo dau cham mac dinh cua the li-quan trong hay dung*/
+            }
+
+            .menu-main li a{
+                text-decoration: none;/*Bo gach chan cua the a*/
+                color: black;
+            }
+
+        .header-main-right{
+            width: 30%;
+            height: 65px;
+            background-color: violet;
+            display: flex;
+        }
+
+            .customer-left{
+                width: 50%;
+                height: 65px;
+                background-color: aqua;
+            }
+
+            .customer-right{
+                width: 50%;
+                height: 65px;
+                background-color: aquamarine;
+            }
+
+
