@@ -10,6 +10,7 @@
     width: 100%;
     height: 40px;
     background-color: #CD6420;
+    position: relative;
 }
 
 
@@ -35,12 +36,41 @@
         font-size: 16px;
     }
 
+    .close{
+        position: absolute;
+        
+        top: 50%;
+        /* left: 50%; */
+        right: 5px;
+        transform: translate(-50%, -50%);
+
+        width: 30px;
+        height: 30px;
+        background-color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        opacity: 0.5; /*do trong suot cua phan tu*/
+    }
+
+        .close i{
+            color: #252525;
+        }
+
+        /* Di chuyen chuot qua phan tu */
+        .close:hover{
+            opacity: 1;
+            cursor: pointer;/*Bien tro chuot thanh ban tay*/
+        }
     /* Header-Center */
     .header-main{
         width: 100%;
         height: 65px;
 
-        background-color: pink;
+        background-color: white;
     }
 
     .header-main .container{
@@ -95,20 +125,83 @@
         .header-main-right{
             width: 30%;
             height: 65px;
-            background-color: violet;
+            /* background-color: violet; */
             display: flex;
         }
 
-            .customer-left{
+            /* .customer-left{
                 width: 50%;
                 height: 65px;
                 background-color: aqua;
-            }
+            } */
+
+                .customer-left ul{
+                    display: flex;
+                    height: 65px;
+                    align-items: center;
+                }
+
+                .customer-left ul li{
+                    list-style: none;
+                    width: 30px;
+                    height: 30px;
+                    background-color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .customer-left ul li:hover{
+                    background-color: rgba(238, 238, 238, 0.4);
+                }
+
+                .customer-left ul .disabled{
+                    opacity: 0.3;
+                    cursor: not-allowed;
+                }
+
+                .customer-left ul .disabled:hover{
+                    background-color: #fff;
+                }
 
             .customer-right{
-                width: 50%;
-                height: 65px;
-                background-color: aquamarine;
+                /* width: 50%;
+                height: 65px; */
+                /* background-color: aquamarine; */
+                margin-left: 20px;
             }
 
+                .customer-right ul{
+                    display: flex;
+                    height: 65px;
+                    align-items: center;
+                }
 
+                    .customer-right ul li{
+                        list-style: none;
+                        margin-left: 20px;
+                        position: relative;
+                    }
+
+                    .customer-right ul li i{
+                        font-size: 19px;
+                    }
+
+                    .customer-right ul li  span{
+                        position: absolute;
+                        top: -12px;
+                        right: -8px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: red;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 13px;
+                        color: #fff;
+                    }
+
+.banner{
+    border-top: 1px solid #111;
+}
