@@ -69,8 +69,8 @@
     .header-main{
         width: 100%;
         height: 65px;
-
         background-color: white;
+        position: sticky;
     }
 
     .header-main .container{
@@ -204,4 +204,37 @@
 
 .banner{
     border-top: 1px solid #111;
+
 }
+
+/* Servive-hot */
+
+.coloumn-4{
+    width: calc(100%/4);
+}
+
+.row{
+    display: flex;
+    margin: 0 -15px;
+}
+
+.coloumn{
+    padding-left: 15px;
+    padding-right: 16px;
+}
+
+.service-hot{
+    width: 100%;
+    height: 500px;
+    background-color: pink;
+}
+
+.content{
+    width: 100%;
+    height: 300px;
+    background-color: violet;
+    margin-bottom: 40px;
+}
+
+
+
