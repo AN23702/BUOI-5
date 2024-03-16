@@ -71,6 +71,8 @@
         height: 65px;
         background-color: white;
         position: sticky;
+        top: 0;
+        z-index: 99999;
     }
 
     .header-main .container{
@@ -115,12 +117,39 @@
             .menu-main li{
                 margin-right: 20px;
                 list-style: none;/*bo dau cham mac dinh cua the li-quan trong hay dung*/
+                position: relative;
+                padding: 22px 0;
+            }
+
+            .menu-main li::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                height: 2px;
+                width: 0;
+                background-color: black;
+                transition: width .4s;
+            }
+            
+            .menu-main li:hover::before{
+                width: 100%;
             }
 
             .menu-main li a{
                 text-decoration: none;/*Bo gach chan cua the a*/
                 color: black;
             }
+
+            .menu-main li i{
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 5px;
+                color: black;
+                opacity: .7;
+            }
+
+
 
         .header-main-right{
             width: 30%;
@@ -202,9 +231,65 @@
                         color: #fff;
                     }
 
-.banner{
-    border-top: 1px solid #111;
 
+
+/* Sub menu */
+.sub-menu-c1{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: white;
+    display: none;
+}
+
+.menu-main:hover .sub-menu-c1{
+    display: block;
+}
+
+.sub-menu-c1 li {
+    padding: 8px 10px;
+}
+
+.sub-menu-c1 li::before{
+    content: none;
+}
+
+.sub-menu-c1 li:hover a{
+    color: blue;
+}
+
+/* Banner */
+
+.banner .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .owl-nav button span{
+    color:black;
+    font-size: 50px;
+}
+
+.banner .owl-dots{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.banner .owl-dots button span{
+    width: 20px !important;
+    height: 5px !important;
+}
+
+.banner .owl-dots button.active span{
+    background-color: black !important;
 }
 
 /* Servive-hot */
